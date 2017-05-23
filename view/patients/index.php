@@ -1,24 +1,28 @@
+<h1>Patients</h1>
 <div class="container">
+
 	<table border="1">
 		<tr>
-			<th>#</th>
-			<th>Voornaam</th>
-			<th>Achternaam</th>
-			<th>Geslacht</th>
-			<th colspan="2">Actie</th>
+				<th>Name</th>
+				<th>Species</th>
+				<th>Client</th>
+				<th>Status</th>
+				<th colspan="2">Action</th>
 		</tr>
 		
-		<?php foreach ($students as $student) { ?>
+		<?php foreach ($patients as $patient) { ?>
 		<tr>
-			<td><?= $student['student_id']; ?></td>
-			<td><?= $student['student_firstname']; ?></td>
-			<td><?= $student['student_lastname']; ?></td>
-			<td><?= $student['student_gender']; ?></td>
-			<td><a href="<?= URL ?>student/edit/<?= $student['student_id'] ?>">Edit</a></td>
-			<td><a href="<?= URL ?>student/delete/<?= $student['student_id'] ?>">Delete</a></td>
+			<td><?= $patient['patient_name']; ?></td>
+			<td><?= $patient['species_id']; ?></td>
+			<td><?= $patient['client_id']; ?></td>
+			<td><?= $patient['patient_status']; ?></td>
+			<td>Edit</td>
+			<td>Delete</td>
+				
+
 		</tr>
 		<?php } ?>
 
 	</table>
-	<a href="<?= URL ?>student/create">Toevoegen</a>
+	<a href="<?= URL ?>patient/create">Toevoegen</a>
 </div>

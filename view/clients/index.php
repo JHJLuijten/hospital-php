@@ -14,11 +14,14 @@
 				<td><?= $client['client_id']; ?></td>
 				<td><?= $client['client_firstname']; ?></td>
 				<td><?= $client['client_lastname']; ?></td>
-				<td>Edit</td>
-				<td>Delete</td>
+				<td><a href="<?= URL ?>clients/edit/<?= $client['client_id'] ?>">Edit</td>
+				<td><a href="<?= URL ?>clients/delete/<?= $client['client_id'] ?>">Delete</td>
+
 				
 			</tr>
+
 		<?php } ?>
 
 		</tbody>
 	</table>
+			<a href="<?= URL ?>clients/create">Toevoegen</a>

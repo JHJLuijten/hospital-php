@@ -12,7 +12,7 @@
 		<tr>
 			<td><?= $specie['species_id']; ?></td>
 			<td><?= $specie['species_description']; ?></td>
-			<td>Edit</td>
+			<td><a href="<?= URL ?>species/edit/<?= $specie['species_id'] ?>">Edit</td>
 			<td><a href="<?= URL ?>species/delete/<?= $specie['species_id'] ?>">Delete</td>
 				
 

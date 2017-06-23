@@ -1,12 +1,10 @@
 <div class="container">
-	<form action="<?= URL ?>student/createSave" method="post">
+	<form action="<?= URL ?>patients/createSave" method="post">
 	
-		<input type="text" name="firstname" placeholder="john">
-		<input type="text" name="lastname" placeholder="doe">
-		<select name="gender">
-			<option value="male">Male</option>
-			<option value="female">Female</option>	
-		</select>
+		<input type="text" name="patient_name" placeholder="patient name john">
+		<input type="text" name="species_id" placeholder="id">
+		<input type="text" name="client_id" placeholder="client_id">
+		<input type="text" name="patient_status" placeholder="status">
 
 		<input type="submit" value="Verzenden">
 	
